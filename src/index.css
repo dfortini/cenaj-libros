@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700|Holtwood+One+SC');
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +8,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size:14px;
+  color:#424242;
+  background-color: #FFFBF1;
+  border:5px solid #DD2C00;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1,h2,h3,h4,h5{
+  font-family:"Holtwood+One+SC";
+  color:#DD2C00;
+  line-height:1;
+}
+
+h1{
+  font-size:3.571rem;
+}
+h2{
+  font-size:2.14rem;
+}
+
+footer{
+  background-color: #DD2C00;
+  color:#FFFBF1;
+  font-family:"Alegraya";
 }
