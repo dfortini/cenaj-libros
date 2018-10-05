@@ -1,0 +1,6 @@
+@mixin shadow-inactive{
+    box-shadow: 5px 5px 0px 0px $color-light;
+}
+@mixin shadow-active{
+    box-shadow: 5px 5px 0px 0px $color-primary;
+}
