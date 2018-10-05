@@ -4,3 +4,13 @@
 @mixin shadow-active{
     box-shadow: 5px 5px 0px 0px $color-primary;
 }
+
+@mixin mainNavLinks{
+    margin:0 2rem;
+    text-decoration:none;
+    font-family: $font-family-subtitle;
+    transition: all 0.25s ease-in-out;
+    border-top:3rem solid $color-light;
+    padding-top:1rem;
+    text-transform:uppercase;
+}
