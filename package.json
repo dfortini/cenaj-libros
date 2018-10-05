@@ -11,14 +11,10 @@
     "react-scripts": "2.0.0-next.2150693d"
   },
   "scripts": {
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "start": "react-scripts start",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "build-css": "node-sass-chokidar --include-path ./node_modules src/ -o src/",
-    "watch-css": "node-sass-chokidar --include-path ./node_modules src/ -o src/ --watch"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +23,8 @@
     ">0.25%",
     "not op_mini all",
     "ie 11"
-  ]
+  ],
+  "devDependencies": {
+    "@types/react-css-modules": "^4.6.2"
+  }
 }
