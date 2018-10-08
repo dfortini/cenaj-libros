@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import './QuienesSomos.module.scss';
 
 class QuienesSomos extends Component {
-    render() {
-        return (
-            <div>
+  render() {
+    return (
+      <div>
 
-            </div>
-        );
-    }
+      </div>
+    );
+  }
 }
 
 export default QuienesSomos;
