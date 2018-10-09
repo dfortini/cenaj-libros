@@ -1,0 +1,16 @@
+@import "css/variables";
+
+footer {
+    background-color: $color-primary;
+    color: $color-light;
+    font-family: $font-family-subtitle;
+    width:100%;
+    display:inline-block;
+    font-size:1.6rem;
+    text-align:center;
+    padding:2rem;
+    margin-top:2rem;
+}
+footer a {
+    color:$color-light;
+  }
