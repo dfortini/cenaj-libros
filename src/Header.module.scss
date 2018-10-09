@@ -1,57 +1,69 @@
 @import "css/variables";
 
-@mixin mainNavLinks{
-    margin:0 2rem;
-    text-decoration:none;
-    font-family: $font-family-subtitle;
-    transition: all 0.25s ease-in-out;
-    border-top:3rem solid $color-light;
-    padding-top:1rem;
-    text-transform:uppercase;
+@mixin mainNavLinks {
+  margin: 0 2rem;
+  text-decoration: none;
+  font-family: $font-family-subtitle;
+  transition: all 0.25s ease-in-out;
+  border-top: 3rem solid $color-light;
+  padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 .logo {
-    margin-top: 2rem;
-    float: left;
+  margin-top: 2rem;
+  float: left;
 }
 .logoImage {
-    width: 8rem;
-    float:left;
+  width: 8rem;
+  float: left;
+}
+.logoText {
+  float: right;
+  margin-top: 2rem;
+}
+.logoTitle {
+  font-family: $font-family-title;
+  color: $color-primary;
+  font-size: 2.6rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+.logoSubtitle {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  letter-spacing: 0.06rem;
+}
+
+.mainNav {
+  float: right;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+}
+
+.mainNavLink {
+  color: $color-secondary;
+  @include mainNavLinks;
+}
+.mainNavLink:hover {
+  color: $color-primary;
+  @include mainNavLinks;
+  border-top: 3rem solid $color-primary;
+}
+.mainNavLinkActive {
+  color: $color-primary;
+  @include mainNavLinks;
+  border-top: 3rem solid $color-primary;
+}
+
+header {
+  max-width: 100%;
+  display: block;
+  padding:0 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: none;
   }
-  .logoText{
-    float:right;
-    margin-top:2rem;
-  }
-  .logoTitle {
-    font-family: $font-family-title;
-    color: $color-primary;
-    font-size:2.6rem;
-    margin-left:1rem;
-    line-height:1;
-  }
-  .logoSubtitle {
-    font-size:1.2rem;
-    margin-left:1rem;
-    letter-spacing:0.06rem;
-  }
-  
-  .mainNav{
-    float:right;
-    font-size:1.8rem;
-    margin-top:5rem;
-  }
-  
-  .mainNavLink{
-    color:$color-secondary;
-    @include mainNavLinks;
-  }
-  .mainNavLink:hover{
-    color:$color-primary;
-    @include mainNavLinks;
-    border-top:3rem solid $color-primary;
-  }
-  .mainNavLinkActive{
-    color:$color-primary;
-    @include mainNavLinks;
-    border-top:3rem solid $color-primary;
-  }
+}

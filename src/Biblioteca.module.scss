@@ -1,0 +1,12 @@
+.sectionTitle {
+  display: flex;
+  margin: 0 0 5rem 0;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.sectionTitle h1 {
+  border-right: 5px solid $color-primary;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
