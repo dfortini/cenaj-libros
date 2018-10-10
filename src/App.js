@@ -1,23 +1,20 @@
 import React from "react";
-import CSSModules from "react-css-modules";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route } from "react-router-dom";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Layout from "./Layout";
 import Biblioteca from "./Biblioteca";
+import QuienesSomos from "./QuienesSomos";
 
 import "./css/_base.scss";
-import styles from "./App.module.scss";
 
 const App = () => (
   <Router>
-    <div styleName="mainContainer">
-      <Header />
+    <Layout>
       <Route path="/biblioteca" component={Biblioteca} />
-      <Footer />
-    </div>
+      <Route path="/quienesSomos" component={QuienesSomos} />
+    </Layout>
   </Router>
 );
 
-export default CSSModules(App, styles);
+export default App;

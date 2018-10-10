@@ -7,7 +7,7 @@ import styles from "./Biblioteca.module.scss";
 class Biblioteca extends Component {
   render() {
     return (
-      <main>
+  
         <div styleName="sectionTitle">
           <h1>Biblioteca</h1>
           <p>
@@ -16,7 +16,6 @@ class Biblioteca extends Component {
             latinoamericana.
           </p>
         </div>
-      </main>
     );
   }
 }

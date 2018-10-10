@@ -1,6 +1,7 @@
 @import "css/variables";
 
 .sectionTitle {
+  width: 100%;
   display: flex;
   margin: 0 0 5rem 0;
   align-items: stretch;
@@ -9,6 +10,29 @@
 
 .sectionTitle h1 {
   border-right: 5px solid $color-primary;
-  padding-right: 1rem;
-  margin-right: 1rem;
+  padding-right: 3rem;
+  margin-right: 3rem;
+}
+
+.sectionTitle p {
+  font-size: 2.2rem;
+  font-family: $font-family-subtitle;
+}
+
+@media (max-width: 1100px) {
+  .sectionTitle {
+    padding: 0 3rem;
+    display: inline-block;
+  }
+
+  .sectionTitle h1 {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle p {
+    font-size: 1.8rem;
+  }
 }

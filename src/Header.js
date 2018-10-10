@@ -1,14 +1,11 @@
 import React from "react";
 import CSSModules from "react-css-modules";
 import { Link } from "react-router-dom";
+
+import {menus} from "./Common";
+
 import styles from "./Header.module.scss";
 import logo from "./img/logo.svg";
-
-const menus = [
-	{ to: "/quienesSomos", text: "Quienes Somos"},
-	{ to: "/biblioteca", text: "Biblioteca" },
-	{ to: "/contacto", text: "Contacto" }
-];
 
 const Header = () => (
 	<header>
