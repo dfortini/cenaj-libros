@@ -3,7 +3,6 @@
 .sectionTitle {
   width: 100%;
   display: flex;
-  margin: 0 0 5rem 0;
   align-items: stretch;
   align-content: stretch;
 }
@@ -19,6 +18,37 @@
   font-family: $font-family-subtitle;
 }
 
+.search {
+  width: 100%;
+  display:inline-block;
+  margin:5rem 0;
+}
+.bookList{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.bookInList{
+  padding:2rem;
+  cursor:pointer;
+  transition:all 0.3s ease-in-out;
+  max-width:22rem;
+}
+.bookInList:hover{
+  background-color:#fff;
+  box-shadow:5px 5px 0 $color-primary;
+}
+.bookPicture{
+  width:14rem;
+  height:20rem;
+  box-shadow:5px 5px 0 #FFECB3;
+  transition:all 0.3s ease-in-out;
+  margin-bottom:2rem;
+}
+.bookInList:hover .bookPicture{
+  box-shadow:5px 5px 0 $color-primary;
+}
 @media (max-width: 1100px) {
   .sectionTitle {
     padding: 0 3rem;
@@ -35,4 +65,11 @@
   .sectionTitle p {
     font-size: 1.8rem;
   }
+  .bookList{
+    justify-content:space-evenly;
+  }
+  .bookInList{
+    max-width:100%;
+  }
 }
+
