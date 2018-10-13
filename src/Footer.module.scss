@@ -5,11 +5,15 @@ footer {
     color: $color-light;
     font-family: $font-family-subtitle;
     width:100%;
+    max-width:110rem;
     display:inline-block;
     font-size:1.6rem;
     text-align:center;
     padding:2rem;
     margin-top:2rem;
+    position:absolute;
+    bottom:0;
+    left:0;
 }
 footer a {
     color:$color-light;
