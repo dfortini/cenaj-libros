@@ -1,0 +1,95 @@
+@import "css/variables";
+
+.sectionTitle {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.sectionTitle h1 {
+  border-right: 5px solid $color-primary;
+  padding-right: 3rem;
+  margin-right: 3rem;
+  text-align: right;
+}
+
+.sectionTitle p {
+  font-size: 2.2rem;
+  font-family: $font-family-subtitle;
+}
+article {
+  width: 100%;
+  margin-top: 4rem;
+  display: inline-block;
+}
+.hero {
+  float: left;
+  margin-right: 4rem;
+  width: 54rem;
+  max-width:100%;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 0 #ffecb3;
+  filter: saturate(0);
+}
+.hero:hover {
+  opacity: 1;
+  box-shadow: 5px 5px 0 $color-primary;
+  filter: saturate(1);
+}
+
+.articleTitle {
+  float:left;
+  width:38rem;
+  max-width:100%;
+}
+
+.articleTitle h2 {
+  border-right: 5px solid $color-primary;
+  padding-right: 3rem;
+  margin-right: 3rem;
+  text-align: right;
+}
+.articleText {
+  float:left;
+  max-width:calc(100% - 41rem);
+}
+@media (max-width: 1100px) {
+  .sectionTitle {
+    padding: 0 3rem;
+    display: inline-block;
+  }
+
+  .sectionTitle h1 {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .sectionTitle p {
+    font-size: 1.8rem;
+  }
+  article {
+      padding:0 3rem;
+  }
+  .hero{
+      margin-right:0;
+      margin-bottom:3rem;
+  }
+  .articleTitle {
+    width:100%;
+  }
+  .articleTitle h2 {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+    text-align: left;
+    margin-bottom:2rem;
+  }
+  .articleText {
+    max-width:100%;
+  }
+}
