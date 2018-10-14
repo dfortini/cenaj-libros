@@ -22,17 +22,19 @@
   float: right;
   margin-top: 2rem;
 }
-.logoTitle {
+p.logoTitle {
   font-family: $font-family-title;
   color: $color-primary;
   font-size: 2.6rem;
   margin-left: 1rem;
   line-height: 1;
+  margin-bottom: 0;
 }
-.logoSubtitle {
+p.logoSubtitle {
   font-size: 1.2rem;
   margin-left: 1rem;
   letter-spacing: 0.06rem;
+  margin-bottom: 0;
 }
 
 .mainNav {
@@ -53,13 +55,13 @@
 .mainNavLinkActive {
   color: $color-primary;
   @include mainNavLinks;
-  border-top: 3rem solid $color-primary;
+  border-top: 3rem solid $color-primary !important;
 }
 
 header {
   max-width: 100%;
   display: block;
-  padding:0 2rem;
+  padding: 0 2rem;
 }
 
 @media (max-width: 768px) {

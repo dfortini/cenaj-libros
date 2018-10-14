@@ -24,16 +24,16 @@ class QuienesSomos extends Component {
             <strong>
               El mundo se veía conmovido. Un puñado de poetas armados ponían fin
               a la sangrienta dinastía somocista en la Nicaragua de Sandino.
-            </strong>{" "}
+            </strong>
             Un anciano, el ayatola Jomeini, desde su exilio parisino, obligaba
             al sha Reza Pahlevi y su bella mujer a abandonar Teherán con
             vertiginoso sigilo seguidos desde cerca por las masas
-            revolucionarias que imponían la República Islámica.{" "}
+            revolucionarias que imponían la República Islámica.
           </p>
 
           <p>
             En tanto, la Rusia stalinista desembarcaba con sus tanques en los
-            pedregosos «pantanos» de Afganistán.{" "}
+            pedregosos «pantanos» de Afganistán.
             <strong>
               En nuestro país la alianza de los usurpadores Videla-Martínez de
               Hoz comenzaba a agrietarse. Una tenue luz de verdad se insinuaba
