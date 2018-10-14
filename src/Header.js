@@ -22,7 +22,7 @@ const Header = () => (
           key={to}
           to={to}
           styleName="mainNavLink"
-          activeClassName="mainNavLinkActive"
+          activeStyle={{color: '#DD2C00', borderTop: '3rem solid #DD2C00', textDecoration: 'none'}}
         >
           {text}
         </NavLink>

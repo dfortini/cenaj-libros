@@ -55,7 +55,7 @@ p.logoSubtitle {
 .mainNavLinkActive {
   color: $color-primary;
   @include mainNavLinks;
-  border-top: 3rem solid $color-primary !important;
+  border-top: 3rem solid $color-primary;
 }
 
 header {
