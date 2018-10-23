@@ -7,12 +7,14 @@ import Biblioteca from "./Biblioteca";
 import QuienesSomos from "./QuienesSomos";
 import Contacto from "./Contacto";
 import Libro from "./Libro";
+import Inicio from "./Inicio";
 
 import "./css/_base.scss";
 
 const App = () => (
   <Router>
     <Layout>
+    <Route path="/inicio" component={Inicio} />
       <Route path="/biblioteca" component={Biblioteca} />
       <Route path="/quienesSomos" component={QuienesSomos} />
       <Route path="/contacto" component={Contacto} />

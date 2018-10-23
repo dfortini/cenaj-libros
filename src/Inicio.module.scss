@@ -1,0 +1,53 @@
+@import "css/variables";
+.HeroHome {
+  display: inline-block;
+  background-color: $color-primary;
+  padding:1rem;
+  position:relative;
+  width:100%;
+}
+.HeroImage {
+  width: 60%;
+  display: inline-block;
+  float:left;
+}
+.HeroText {
+  margin-left: -100px;
+  width: calc(40% + 50px);
+  display: inline-block;
+  float:left;
+  z-index: 2;
+  background-color:$color-light;
+  font-family:$font-family-title;
+  font-size:2rem;
+  padding:2rem;
+  box-shadow: 5px 5px 0px 0px #FFECB3;
+  position:absolute;
+  bottom:4rem;
+}
+.VideosTitle{
+  margin:4rem 0;
+}
+
+@media (max-width: 768px) {
+    .HeroImage {
+        width: 100%;
+        display: inline-block;
+        float:left;
+      }
+      .HeroText {
+        margin-left: 0;
+        width: 100%;
+        display: inline-block;
+        float:left;
+        z-index: 2;
+        background-color:$color-light;
+        font-family:$font-family-title;
+        font-size:2rem;
+        padding:2rem;
+        box-shadow: none;
+        position:relative;
+        bottom:auto;
+      }
+      
+  }
